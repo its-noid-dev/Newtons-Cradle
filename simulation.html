@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Newton's Cradle - Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Newton's Cradle</h1>
+
+    <p>
+        Watch how Isaac Newton's laws of motion
+        work in action!
+    </p>
+
+    <div class="simulation">
+
+        <h2>The Simulation</h2>
+
+        <div id="cradle">
+
+            <div class="frame">
+                <div class="top-bar"></div>
+                <div class="side left"></div>
+                <div class="side right"></div>
+            </div>
+
+            <div id="balls">
+
+                <div class="pendulum">
+                    <div class="rope"></div>
+                    <img src="ball.png" class="ball">
+                </div>
+
+                <div class="pendulum">
+                    <div class="rope"></div>
+                    <img src="ball.png" class="ball">
+                </div>
+
+                <div class="pendulum">
+                    <div class="rope"></div>
+                    <img src="ball.png" class="ball">
+                </div>
+
+                <div class="pendulum">
+                    <div class="rope"></div>
+                    <img src="ball.png" class="ball">
+                </div>
+
+                <div class="pendulum">
+                    <div class="rope"></div>
+                    <img src="ball.png" class="ball">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button onclick="startSimulation()">Start</button>
+
+    <button onclick="stopSimulation()">Stop</button>
+
+    <br><br>
+
+    <a href="index.html">Back to the main page</a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+
+body {
+    background-color: #eaf4ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #183b66;
+    font-size: 40px;
+    margin-top: 60px;
+}
+
+p {
+    color: #444;
+    font-size: 18px;
+}
+
+button {
+    background-color: #2478d4;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #15549b;
+}
+
+a {
+    color: #2478d4;
+    text-decoration: none;
+}
+
+/* Simulation box */
+
+.simulation {
+    background-color: white;
+    width: 80%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Cradle frame */
+
+#cradle {
+    position: relative;
+    width: 550px;
+    height: 260px;
+    margin: 30px auto;
+}
+
+.frame {
+    position: absolute;
+    width: 450px;
+    height: 220px;
+    left: 50px;
+}
+
+.top-bar {
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(gray, silver, gray);
+    border-radius: 5px;
+}
+
+.side {
+    position: absolute;
+    top: 0;
+    width: 12px;
+    height: 220px;
+    background: linear-gradient(gray, silver, gray);
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+/* Balls and ropes */
+
+#balls {
+    position: absolute;
+    top: 12px;
+    left: 112px;
+    display: flex;
+    gap: 0;
+}
+
+.pendulum {
+    position: relative;
+    width: 65px;
+    height: 190px;
+    flex-shrink: 0;
+    transform-origin: top center;
+}
+
+.rope {
+    position: absolute;
+    top: 0;
+    left: 32px;
+    width: 2px;
+    height: 125px;
+    background-color: #555;
+}
+
+.ball {
+    position: absolute;
+    top: 125px;
+    left: 0;
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
